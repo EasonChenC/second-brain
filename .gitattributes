@@ -1,0 +1,14 @@
+# 统一换行符，避免 Windows 下 diff 全是噪音
+* text=auto eol=lf
+
+# markdown / json 一律 LF
+*.md   text eol=lf
+*.json text eol=lf
+
+# 二进制
+*.exe  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary

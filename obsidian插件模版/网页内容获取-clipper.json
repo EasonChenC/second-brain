@@ -1,0 +1,43 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "网页内容获取",
+	"behavior": "create",
+	"noteContentFormat": "{{content}}",
+	"properties": [
+		{
+			"name": "source_title",
+			"value": "{{title}}",
+			"type": "text"
+		},
+		{
+			"name": "source_url",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "channel",
+			"value": "{{author}}",
+			"type": "text"
+		},
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "type",
+			"value": "youtube",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "web-clip",
+			"type": "multitext"
+		}
+	],
+	"triggers": [
+		"/^https?:\\/\\/(www\\.)?youtube\\.com\\/watch/"
+	],
+	"noteNameFormat": "{{title}}",
+	"path": "raw"
+}
